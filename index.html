@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals Playground</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 JavaScript Fundamentals Playground</h1>
+      <p><strong>Eugene's Assignment Submission</strong></p>
+
+      <!-- Part 1: Conditionals & Input -->
+      <section class="card">
+        <h2>🔹 Part 1: Variables & Conditionals</h2>
+        <p>Enter your age to check eligibility:</p>
+        <input type="number" id="ageInput" placeholder="Enter your age" />
+        <button onclick="checkAge()">Check Eligibility</button>
+        <p id="ageResult"></p>
+      </section>
+
+      <!-- Part 2: Functions -->
+      <section class="card">
+        <h2>🔹 Part 2: Reusable Functions</h2>
+        <div>
+          <h3>Format Full Name</h3>
+          <input type="text" id="firstName" placeholder="First Name" />
+          <input type="text" id="lastName" placeholder="Last Name" />
+          <button onclick="formatName()">Format Name</button>
+          <p id="nameOutput"></p>
+        </div>
+        <div>
+          <h3>Calculate Discounted Price</h3>
+          <input type="number" id="priceInput" placeholder="Original Price" />
+          <input type="number" id="discountInput" placeholder="Discount %" />
+          <button onclick="calculateDiscount()">Apply Discount</button>
+          <p id="priceOutput"></p>
+        </div>
+      </section>
+
+      <!-- Part 3: Loops -->
+      <section class="card">
+        <h2>🔹 Part 3: Loops in Action</h2>
+        <div>
+          <h3>Generate Number List (For Loop)</h3>
+          <input type="number" id="listCount" placeholder="How many numbers?" />
+          <button onclick="generateList()">Generate List</button>
+          <ul id="numberList"></ul>
+        </div>
+        <div>
+          <h3>Countdown Timer (While Loop)</h3>
+          <input
+            type="number"
+            id="countdownStart"
+            placeholder="Start from..."
+          />
+          <button onclick="startCountdown()">Start Countdown</button>
+          <p id="countdownOutput"></p>
+        </div>
+      </section>
+
+      <!-- Part 4: DOM Manipulation -->
+      <section class="card">
+        <h2>🔹 Part 4: DOM Interactions</h2>
+        <button onclick="changeHeading()">Change Page Title</button>
+        <button onclick="toggleMode()">Toggle Dark Mode</button>
+        <button onclick="addElement()">Add Dynamic Paragraph</button>
+        <div id="dynamicContent"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
